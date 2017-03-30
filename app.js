@@ -7,4 +7,5 @@ function Project(name, description, url, photo) {
   this.description = description;
   this.url = url;
   this.photo = photo;
+  this.push(projects);
 }
