@@ -2,25 +2,35 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link type="text/css" href="style.css" rel="stylesheet">
+  <link type="text/css" href="css/base.css" rel="stylesheet">
+  <link type="text/css" href="css/layout.css" rel="stylesheet">
+  <link type="text/css" href="css/reset.css" rel="stylesheet">
+  <link type="text/css" href="css/hamburgers.css" rel="stylesheet">
 </head>
 <body>
-  <div>
-    <section class="name_section">
+  <header>
+
+    <nav>
+      <button class="hamburger hamburger--spin is-active" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
       <h1>Paula Mookerjee</h1>
     </section>
-    <section class = "project_section">
-      <ul class="project_boxes">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-
+    <section class = "projects">
+      <article class="boxes two"><img src="assets/cat.jpg"></article>
+      <article class="boxes two"><img src="assets/cat.jpg"></article>
+      <article class="boxes two"><img src="assets/cat.jpg"></article>
+      <article class="boxes two"><img src="assets/cat.jpg"></article>
     </section>
-  </div>
+  </main>
+  <footer></footer>
+  <script src="vendor/jquery-3.2.0.js" type="javascript"></script>
   <script src="app.js" type="javascript"></script>
 </body>
 </html>

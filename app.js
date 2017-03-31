@@ -7,5 +7,18 @@ function Project(name, description, url, photo) {
   this.description = description;
   this.url = url;
   this.photo = photo;
-  this.push(projects);
 }
+
+(function() {
+
+  $.ajax({
+    url: 'project_file.json',
+    async: false,
+    dataType: 'json',
+    success: function(data) {
+      for(var x in data) {
+        projects[x] = new Project(data[x].name, data[x].description, data[x].url, data[x].photo);
+    }
+  });
+
+}) ()

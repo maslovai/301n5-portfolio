@@ -1,0 +1,9 @@
+@media screen and (max-width: 800px){
+.name_section, .project_section {
+max-width: 800;
+}
+}
+
+@media screen and (min-width: 800px){
+
+}
