@@ -22,3 +22,10 @@ function Project(name, description, url, photo) {
   });
 
 }) ()
+
+$(document).ready(function(){
+  $('.show-projects').click(function(){
+     $(this).hide();
+    $('.boxes').attr('display', 'float left');
+  })
+})

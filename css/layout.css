@@ -1,9 +1,25 @@
 @media screen and (max-width: 800px){
-.name_section, .project_section {
-max-width: 800;
-}
+
+   .boxes {
+     display: none;
+     max-width: 100%
+   }
+   .show-projects {
+     width: 5em;
+     height: 5em;
+     border: .1em black solid;
+     background-color: black;
+     margin-top: 40%;
+     border-radius: 1.3em;
+     color: white;
+     font-family: fantasy;
+     font-size: 1em;
+   }
 }
 
 @media screen and (min-width: 800px){
+    .show-button {
+      display: none;
+    }
 
 }
