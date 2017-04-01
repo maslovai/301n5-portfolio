@@ -2,6 +2,8 @@
 
 var projects = [];
 
+
+
 function Project(name, description, url, photo) {
   this.name = name;
   this.description = description;
@@ -18,14 +20,18 @@ function Project(name, description, url, photo) {
     success: function(data) {
       for(var x in data) {
         projects[x] = new Project(data[x].name, data[x].description, data[x].url, data[x].photo);
+      }
     }
   });
 
 }) ()
 
-$(document).ready(function(){
-  $('.show-projects').click(function(){
-     $(this).hide();
-    $('.boxes').attr('display', 'float left');
-  })
+var clickEvent = function(event) {
+  var $button = $(event.target);
+  $button.addClass('hidden');
+  $('.boxes').fadeIn(700);
+}
+
+$(function(){
+  $('a[href="#button"]').on('click', clickEvent);
 })

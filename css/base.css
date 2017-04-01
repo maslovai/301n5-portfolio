@@ -60,3 +60,7 @@ header {
   margin: 10% 50%;
 
 }
+
+.hidden {
+  display: none;
+}
