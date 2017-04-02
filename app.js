@@ -26,12 +26,12 @@ function Project(name, description, url, photo) {
 
 }) ()
 
-var clickEvent = function(event) {
-  var $button = $(event.target);
+var clickEvent = function() {
+  var $button = $(this);
   $button.addClass('hidden');
   $('.boxes').fadeIn(700);
 }
 
 $(function(){
-  $('a[href="#button"]').on('click', clickEvent);
+  $('.show-projects').on('click', clickEvent);
 })

@@ -50,7 +50,7 @@ header {
   background-color: orange;
 }
 
-.boxes {
+/*.boxes {
   width: 50%;
   height: 50%;
   display: flex;
@@ -59,8 +59,12 @@ header {
   flex-wrap: wrap;
   margin: 10% 50%;
 
-}
+}*/
 
 .hidden {
   display: none;
+}
+
+img {
+  max-width: 100%;
 }
