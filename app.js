@@ -42,17 +42,11 @@ $(function(){
 })
 
 $(function () {
-  var string = "Paula Mookerjee";
-  var dest = $('#fadeIn');
-  var c = 0;
-  var i = setInterval(function () {
-    if (c >= string.length) {
-      clearInterval(i);
-      dest.text(string);
-    } else {
-      $('h1').text(string[c]).
-      appendTo(dest).fadeIn(200);
-      c++;
-    }
-  }, 200);
+  var name = 'Paula Mookerjee',
+  char = 0;
+
+  setInterval(function(){
+    $('#fadeIn').append(name[char]);
+    char++;
+  },90);
 });

@@ -6,13 +6,9 @@
 
    .show-projects {
      margin: 0 auto;
-     width: 5em;
-     height: 5em;
+     background: none;
      border: none;
      outline: none;
-     background-color: black;
-     /*margin-top: 40%;*/
-     border-radius: 1.3em;
      color: white;
      font-family: fantasy;
      font-size: 1em;
