@@ -43,7 +43,7 @@ $(function(){
 
 $(function () {
   var name = 'Paula Mookerjee',
-  char = 0;
+    char = 0;
 
   setInterval(function(){
     $('#fadeIn').append(name[char]);
