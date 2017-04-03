@@ -8,7 +8,8 @@
      margin: 0 auto;
      width: 5em;
      height: 5em;
-     border: .1em black solid;
+     border: none;
+     outline: none;
      background-color: black;
      /*margin-top: 40%;*/
      border-radius: 1.3em;
@@ -19,8 +20,19 @@
    }
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 700px){
     .show-projects {
       display: none;
     }
+
+    .boxes {
+      display: flex;
+      flex-wrap: wrap;
+      height: 100%:
+    }
+
+   .box-photo {
+     width: 100%;
+     height: relative;
+   }
 }
