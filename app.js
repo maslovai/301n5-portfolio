@@ -26,12 +26,33 @@ function Project(name, description, url, photo) {
 
 }) ()
 
-var clickEvent = function() {
+var showProjects = function() {
   var $button = $(this);
   $button.addClass('hidden');
-  $('.boxes').fadeIn(700);
+  $('.boxes').fadeIn().addClass('show');
+}
+
+var slideMenu = function() {
+
 }
 
 $(function(){
-  $('.show-projects').on('click', clickEvent);
+  $('.show-projects').on('click', showProjects);
+  $('#hamburger').on('click', slideMenu )
 })
+
+$(function () {
+  var string = "Paula Mookerjee";
+  var dest = $('#fadeIn');
+  var c = 0;
+  var i = setInterval(function () {
+    if (c >= string.length) {
+      clearInterval(i);
+      dest.text(string);
+    } else {
+      $('h1').text(string[c]).
+      appendTo(dest).fadeIn(200);
+      c++;
+    }
+  }, 200);
+});

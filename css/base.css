@@ -1,5 +1,4 @@
 body {
-  background-color: blue;
   padding: 0;
 }
 
@@ -8,63 +7,12 @@ header {
   width: inherit;
 }
 
+article {
+  display: flex;
+}
+
 /*nav {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
 }*/
-
-.main {
-  position: relative;
-}
-
-.hero {
-  /*padding: 0 20% 30% 20%;*/
-  display: flex;
-  justify-content: space-between;
-  width: inherit;
-  height: 11em;
-  background-color: purple;
-  border: 2px solid;
-  padding: 0;
-}
-
-.hero h1 {
-  padding-top: 20%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  font-family: cursive;
-  font-size: 1.5em;
-}
-
-.projects{
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  width: inherit;
-  height: 25em;
-  /*margin: 0 auto;*/
-  /*display: flex;
-  flex-wrap: wrap;*/
-  background-color: orange;
-}
-
-/*.boxes {
-  width: 50%;
-  height: 50%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 10% 50%;
-
-}*/
-
-.hidden {
-  display: none;
-}
-
-img {
-  max-width: 100%;
-}
