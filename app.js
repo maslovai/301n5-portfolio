@@ -43,10 +43,38 @@ $(function(){
 
 $(function () {
   var name = 'Paula Mookerjee',
-    char = 0;
+  index1 = 0, index2 = 0, index3 = 0;
+
+  var firstLine = Handlebars.compile($('#welcome').html());
+  var secondLine = Handlebars.compile($('#about').html());
+  var thirdLine = Handlebars.compile($('#invitation').html());
+
+  var welcomeContent = { welcome: 'Welcome to my portfolio' }
+  var aboutContent = { about: 'The projects below were created during my studies at Code Fellow'}
+  var invitationContent = { invitation: 'Please feel free to look around, or drop me a note on the Contact page'}
 
   setInterval(function(){
-    $('#fadeIn').append(name[char]);
-    char++;
-  },90);
+    $('#fadeIn').append(name[index1]);
+    index1++;
+  },125);
+
+  setTimeout(function(){
+    $('#fadeIn').slideToggle('fast');
+  },200);
+
+
+  // setInterval(function(){
+  //   var script = firstLine(welcomeContent);
+  //   $('#stuff').append(script[index2]).fadeIn('fast');
+  //   index2++;
+  // }, 600);
+  //
+  // setTimeout(function(){
+  //   $('#stuff').slideToggle('fast');
+  // }, 800);
+});
+
+$(function() {
+
+
 });

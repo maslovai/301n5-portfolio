@@ -18,10 +18,10 @@
   padding: 0;
 }
 
-.hero h1 {
+.hero h1, h2 {
   /*padding-top: 20%;*/
   margin: 0  auto;
-  font-family: cursive;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.5em;
   z-index: 100000000;
 }
