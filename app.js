@@ -62,7 +62,6 @@ $(function () {
 
   setTimeout(function(){
     $('#fadeIn').slideToggle('slow');
-    var done = true;
   }, 2000);
 
   setTimeout(function() {
