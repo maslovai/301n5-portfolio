@@ -43,7 +43,7 @@ $(function(){
 
 $(function () {
   var name = 'Paula Mookerjee',
-  index1 = 0, index2 = 0, index3 = 0;
+  char = 0;
 
   var firstLine = Handlebars.compile($('#welcome').html());
   var secondLine = Handlebars.compile($('#about').html());
@@ -54,24 +54,24 @@ $(function () {
   var invitationContent = { invitation: 'Please feel free to look around, or drop me a note on the Contact page'}
 
   setInterval(function(){
-    $('#fadeIn').append(name[index1]);
-    index1++;
+    $('#fadeIn').append(name[char]);
+    char++;
   },125);
 
   setTimeout(function(){
     $('#fadeIn').slideToggle('fast');
-  },200);
 
+    setTimeout(function() {
+      var index = 0;
+      var script = firstLine(welcomeContent);
 
-  // setInterval(function(){
-  //   var script = firstLine(welcomeContent);
-  //   $('#stuff').append(script[index2]).fadeIn('fast');
-  //   index2++;
-  // }, 600);
-  //
-  // setTimeout(function(){
-  //   $('#stuff').slideToggle('fast');
-  // }, 800);
+      setInterval(function(){
+        $('#stuff').append(script[index]).fadeIn('fast');
+        index++;
+
+      },200);
+    }),4000;
+  },6000);
 });
 
 $(function() {
