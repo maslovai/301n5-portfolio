@@ -1,8 +1,16 @@
 @media screen and (max-width: 800px){
-
-   .boxes {
-     display: none;
+   .projects{
+     display:block;
    }
+
+   article.boxes{
+     width:35%;
+     margin:5%;
+   }
+   /*.box-photo {
+     width: 50%;
+     height: 50%;
+   }*/
 
    .show-projects {
      margin: 0 auto;

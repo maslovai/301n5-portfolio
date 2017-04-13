@@ -31,8 +31,8 @@
 .projects{
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   flex-direction: column;
   padding: 0;
   display: -webkit-box;
@@ -42,6 +42,7 @@
   display: -webkit-flex;
   height: 25em;
   background-color: black;
+
 }
 
  .show {
@@ -49,9 +50,12 @@
   flex-wrap: wrap;
   width: 50%;
 }
-
+.boxes{
+  width: 23%;
+  margin:0;
+}
 .box-photo {
-  max-width: 100%;
+  max-width: 240px;
 }
 
 .hidden {
