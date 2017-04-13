@@ -2,25 +2,33 @@
 
    .boxes {
      display: none;
-     max-width: 100%
    }
+
    .show-projects {
-     width: 5em;
-     height: 5em;
-     border: .1em black solid;
-     background-color: black;
-     margin-top: 40%;
-     border-radius: 1.3em;
+     margin: 0 auto;
+     background: none;
+     border: none;
+     outline: none;
      color: white;
-     font-family: fantasy;
+     font-family: 'Montserrat', sans-serif;
      font-size: 1em;
      z-index: 99999999;
    }
 }
 
-@media screen and (min-width: 800px){
-    .show-button {
+@media screen and (min-width: 700px){
+    .show-projects {
       display: none;
     }
 
+    .boxes {
+      display: flex;
+      flex-wrap: wrap;
+      height: 100%:
+    }
+
+   .box-photo {
+     width: 100%;
+     height: relative;
+   }
 }

@@ -1,0 +1,59 @@
+.main {
+  position: relative;
+}
+
+.hero {
+  background-image: url('../assets/hero_background2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /*opacity: .8;*/
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: inherit;
+  height: 11em;
+  /*background-color: purple;*/
+  border: 2px solid;
+  padding: 0;
+}
+
+.hero h1, h3 {
+  /*padding-top: 20%;*/
+  margin: 0  auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5em;
+  z-index: 100000000;
+}
+
+
+.projects{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  height: 25em;
+  background-color: black;
+}
+
+ .show {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.box-photo {
+  max-width: 100%;
+}
+
+.hidden {
+  display: none;
+}
